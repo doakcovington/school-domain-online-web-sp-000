@@ -11,7 +11,9 @@ class School
 
   def add_student(name,grade)
     roster[grade] = []
-    roster[grade] << name
+    roster[grade].each do |year,person|
+      year << person 
+    end
   end
 
 end #end of school class
