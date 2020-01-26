@@ -11,7 +11,7 @@ class School
 
   def add_student(name,grade)
     roster[grade] = []
-    roster[grade].store(name)
+    roster[grade].store([name])
   end
 
 end #end of school class
