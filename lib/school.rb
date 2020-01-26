@@ -11,9 +11,11 @@ class School
 
   def add_student(name,grade)
     roster[grade] = []
-    name.each do |person|
-      roster[grade] << person 
-    end
+    if roster.has_key?(grade)
+      roster[grade] << name
+    else
+      roster[grade] = [name]
+    end    
   end
 
 end #end of school class
