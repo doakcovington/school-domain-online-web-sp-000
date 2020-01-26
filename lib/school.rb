@@ -10,8 +10,7 @@ class School
   end
 
   def add_student(name,grade)
-    @name = name
-    @grade = grade
+    roster[:name] = grade
   end
 
 end #end of school class
