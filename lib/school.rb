@@ -22,6 +22,6 @@ class School
   end
 
   def sort
-    roster.sort
+    roster.sort_by{k,v}
   end
 end #end of school class
