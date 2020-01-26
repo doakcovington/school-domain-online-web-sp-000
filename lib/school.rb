@@ -21,7 +21,7 @@ class School
     roster[grade]
   end
 
-  def sort(name,grade)
-    roster.sort_by{[grade,name] grade}
+  def sort
+    roster.sort
   end
 end #end of school class
